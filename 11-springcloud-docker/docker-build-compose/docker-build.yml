@@ -1,0 +1,11 @@
+version: '3'
+services:
+  springcloud-eureka-server:
+    build: springcloud-eureka-server
+    ports:
+      - 8761:8761
+
+  service-1:
+    build: springcloud-eureka-client
+    ports:
+      - 8762:8762

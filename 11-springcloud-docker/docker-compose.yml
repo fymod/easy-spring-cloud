@@ -1,0 +1,13 @@
+version: '3'
+services:
+  springcloud-eureka-server:
+    image: fymod/springcloud-eureka-server
+    restart: always
+    ports:
+      - 8761:8761
+
+  service-1:
+    image: fymod/springcloud-eureka-client
+    restart: always
+    ports:
+      - 8762:8762
