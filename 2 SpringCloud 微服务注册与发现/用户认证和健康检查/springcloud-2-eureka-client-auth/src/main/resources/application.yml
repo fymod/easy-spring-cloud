@@ -1,0 +1,13 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: eureka-client-auth
+eureka:
+  client:
+    healthcheck: 
+      enabled: true
+    service-url:
+      defaultZone: http://fymod:123456@localhost:9010/eureka/
+  instance:
+    prefer-ip-address: true
