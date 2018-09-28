@@ -1,0 +1,11 @@
+server:
+  port: 9031
+spring:
+  application:
+    name: feign-client
+eureka: 
+  client:
+    service-url:
+      defaultZone: http://localhost:9030/eureka/
+  instance:
+    prefer-ip-address: true

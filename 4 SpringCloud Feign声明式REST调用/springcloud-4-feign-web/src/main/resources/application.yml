@@ -1,0 +1,14 @@
+server:
+  port: 9033
+spring:
+  application:
+    name: feign-web
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9030/eureka/
+  instance:
+    prefer-ip-address: true
+feign-client: 
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
