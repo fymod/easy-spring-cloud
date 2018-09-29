@@ -1,0 +1,14 @@
+server:
+  port: 9064
+spring:
+  application:
+    name: dashboard-feign
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9060/eureka/
+  instance:
+    prefer-ip-address: true
+feign: 
+  hystrix: 
+    enabled: true

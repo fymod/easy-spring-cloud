@@ -1,0 +1,11 @@
+server:
+  port: 9051
+spring:
+  application:
+    name: hystrix-feign-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9050/eureka/
+  instance:
+    prefer-ip-address: true

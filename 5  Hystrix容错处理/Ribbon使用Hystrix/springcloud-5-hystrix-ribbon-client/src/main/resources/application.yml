@@ -1,0 +1,11 @@
+server:
+  port: 9041
+spring:
+  application:
+    name: hystrix-ribbon-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9040/eureka/
+  instance:
+    prefer-ip-address: true

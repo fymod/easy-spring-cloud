@@ -1,0 +1,11 @@
+server:
+  port: 9061
+spring:
+  application:
+    name: dashboard-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9060/eureka/
+  instance:
+    prefer-ip-address: true

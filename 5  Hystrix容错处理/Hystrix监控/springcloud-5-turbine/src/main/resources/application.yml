@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: turbine
+server:
+  port: 9065
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: dashboard-feign,dashboard-ribbon
+  clusterNameExpression: new String("default")
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9060/eureka/
+  instance:
+    prefer-ip-address: true
