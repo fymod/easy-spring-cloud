@@ -1,0 +1,23 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9070/eureka/
+server:
+  port: 9073
+spring:
+  application:
+    name: zuul-web
+zuul: 
+  routes:
+    api-1:
+      path: /api-client1/**
+      serviceId: zuul-client1
+    api-2:
+      path: /api-client2/**
+      serviceId: zuul-client2
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
+
+      
