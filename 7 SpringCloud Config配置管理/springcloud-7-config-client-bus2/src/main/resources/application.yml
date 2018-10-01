@@ -1,0 +1,7 @@
+server:
+  port: 9083
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

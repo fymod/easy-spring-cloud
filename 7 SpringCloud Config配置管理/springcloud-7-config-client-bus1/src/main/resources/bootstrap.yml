@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: springcloud-7-config
+  cloud:
+    config:
+      uri: http://localhost:9080/
+      profile: dev
+      label: master
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

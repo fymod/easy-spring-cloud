@@ -1,0 +1,13 @@
+server:
+  port: 9080
+spring:
+  application:
+    name: springcloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fymod/easy-spring-cloud
+          username: fymod
+          password: wang.0223
+          
