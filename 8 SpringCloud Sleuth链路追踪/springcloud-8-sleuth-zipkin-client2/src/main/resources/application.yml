@@ -1,0 +1,11 @@
+server:
+  port: 9092
+spring:
+  application:
+    name: sleuth-zipkin-client2
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1.0
+  
