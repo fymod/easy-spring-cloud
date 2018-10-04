@@ -8,6 +8,6 @@ spring:
       server:
         git:
           uri: https://github.com/fymod/easy-spring-cloud
-          username: fymod
-          password: wang.0223
+          username: your username
+          password: your password
           
