@@ -1,0 +1,14 @@
+version: "3"
+services: 
+  springcloud-9-compose-server: 
+    image: fymod/springcloud-9-compose-server:0.0.1-SNAPSHOT
+    ports: 
+      - 9110:9110
+  springcloud-9-compose-client1: 
+    image: fymod/springcloud-9-compose-client1:0.0.1-SNAPSHOT
+    links:
+      - springcloud-9-compose-server:discovery
+  springcloud-9-compose-client2: 
+    image: fymod/springcloud-9-compose-client2:0.0.1-SNAPSHOT
+    links:
+      - springcloud-9-compose-server:discovery

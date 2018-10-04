@@ -1,0 +1,11 @@
+server:
+  port: 9111
+spring:
+  application:
+    name: compose-eureka-client1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery:9110/eureka/
+  instance:
+    prefer-ip-address: true

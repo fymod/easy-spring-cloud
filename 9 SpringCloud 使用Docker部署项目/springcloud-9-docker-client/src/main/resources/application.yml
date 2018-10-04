@@ -1,0 +1,11 @@
+server:
+  port: 9101
+spring:
+  application:
+    name: docker-eureka-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.11:9100/eureka/
+  instance:
+    prefer-ip-address: true
