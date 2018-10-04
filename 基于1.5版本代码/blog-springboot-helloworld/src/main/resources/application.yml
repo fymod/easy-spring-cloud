@@ -1,0 +1,10 @@
+server: 
+  port: 8080
+  context-path: /fymod
+spring:
+  profiles:
+    active: dev
+  jpa: 
+    hibernate: 
+      ddl-auto: update
+    show-sql: true

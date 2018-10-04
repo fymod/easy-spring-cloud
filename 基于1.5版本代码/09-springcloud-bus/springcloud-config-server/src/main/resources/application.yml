@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server: 
+        git: 
+          uri: https://github.com/fymod/easy-spring-cloud/
+          search-paths: 07-springcloud-config
+          username: 
+          password: 
+server:
+  port: 8770
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

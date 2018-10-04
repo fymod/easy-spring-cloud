@@ -1,0 +1,7 @@
+myUrl: www.zhaoguojian.com
+spring: 
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.2.2.1:3306/test?useSSL=false
+    username: root
+    password: root
