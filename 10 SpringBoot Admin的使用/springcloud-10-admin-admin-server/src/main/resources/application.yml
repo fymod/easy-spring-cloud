@@ -1,0 +1,25 @@
+server:
+  port: 9301
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://localhost:9300/eureka/
+  instance:
+    metadata-map:
+      user.name: admin
+      user.password: 123456
+spring: 
+  application:
+    name: admin-server
+  security:
+    user:
+      name: admin
+      password: 123456
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

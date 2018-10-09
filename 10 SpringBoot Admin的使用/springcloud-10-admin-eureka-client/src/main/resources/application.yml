@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://localhost:9300/eureka/
+server:
+  port: 9302
+spring:
+  application:
+    name: eureka-client
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
