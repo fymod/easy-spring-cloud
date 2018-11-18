@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+      gateway:
+        discovery: 
+          locator:
+            enabled: true
+        routes:
+        - id: api-test1
+          uri: http://localhost:8081
+          predicates:
+          - Path=/t1/**
+          filters:
+          - SwaggerHeaderFilter
+          - StripPrefix=1
+        - id: api-test2
+          uri: http://localhost:8082
+          predicates:
+          - Path=/t2/**
+          filters:
+          - SwaggerHeaderFilter
+          - StripPrefix=1
